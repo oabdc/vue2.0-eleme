@@ -1,0 +1,65 @@
+@mixin border-1px($color){
+  position: relative;
+  &:after{
+    display: block;
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    border-top:1px solid $color;
+    content:'';
+  }
+  @media(-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5){
+    &:after{
+      -webkit-transform: scaleY(0.7);
+      -moz-transform: scaleY(0.7);
+      -ms-transform: scaleY(0.7);
+      -o-transform: scaleY(0.7);
+      transform: scaleY(0.7);
+    }
+  }
+  @media(-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2){
+    &:after{
+    -webkit-transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
+    -o-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}
+  @media(-webkit-min-device-pixel-ratio: 2.25),(min-device-pixel-ratio: 2.25){
+    &:after{
+      -webkit-transform: scaleY(0.444);
+      -moz-transform: scaleY(0.444);
+      -ms-transform: scaleY(0.444);
+      -o-transform: scaleY(0.444);
+      transform: scaleY(0.444);
+    }
+  }
+  @media(-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3){
+    &:after{
+      -webkit-transform: scaleY(0.333);
+      -moz-transform: scaleY(0.333);
+      -ms-transform: scaleY(0.333);
+      -o-transform: scaleY(0.333);
+      transform: scaleY(0.333);
+    }
+  }
+}
+@mixin bg-image($url){
+  background-image: url($url + '@2x.png');
+  @media(-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3){
+    background-image: url($url + '@3x.png');
+  }
+
+}
+@mixin border-none(){
+  &:after{
+    display: none;
+  }
+}
+
+
+
+
+
