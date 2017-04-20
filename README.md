@@ -4,11 +4,11 @@
 
 # 技术栈
 
-vue2.0
+vue2.0  最新语法
 
-vue-router
+vue-router 路由管理
 
-vue-resource 作者就宣告vue2.0后不再对vue-resource更新，而是推荐的axios,之后会尝试使用
+vue-resource http请求 作者就宣告vue2.0后不再对vue-resource更新，而是推荐的axios,之后会尝试使用
 
 sass(scss) css预处理语言
 
