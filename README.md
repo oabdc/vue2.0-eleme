@@ -2,11 +2,11 @@
 
 全程跟了一遍慕课老师的课程，获益良多。
 
-# 技术栈
+# 技术栈 #
 
-vue2.0  最新语法
+<font size=4>vue2.0</font>  最新语法
 
-vue-router 路由管理
+## vue-router 路由管理
 
 vue-resource http请求 作者就宣告vue2.0后不再对vue-resource更新，而是推荐的axios,之后会尝试使用
 
